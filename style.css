@@ -1,0 +1,88 @@
+/* General reset and full-screen styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000; /* black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  #start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background for contrast */
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    z-index: 2;
+    transition: opacity 1s ease;
+  }
+  
+  #start-screen:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten when hovered */
+  }
+  
+  #message-box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 1s ease;
+    max-width: 80%;
+  }
+  
+  body {
+    background: linear-gradient(180deg, #000 0%, #0d1a26 50%, #0f2a3c 100%);
+    background-image: url('starry-background.png'); /* Ensure you have a starry image or gradient background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+  /* Hide the default cursor */
+body {
+    cursor: none;  /* Hide the default cursor */
+  }
+  
+  #game-canvas {
+    cursor: none;  /* Also hide the cursor on the canvas */
+  }
+  
+  
