@@ -26,7 +26,7 @@
 
 ---
 
-## 🚀 How to Run
+## How to Run
 1. Make sure all project files are in the same folder.  
 2. Open `index.html` in your browser.  
 3. Enjoy the weirdness.
